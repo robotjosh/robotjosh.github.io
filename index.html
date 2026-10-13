@@ -1,6 +1,16 @@
-<html>
-<style>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Robot Josh | Firmware, Hardware &amp; IoT Engineering</title>
+	<meta name="description" content="Robot Josh: engineer specializing in firmware, hardware design, IoT, and web development.">
+	<meta property="og:title" content="Robot Josh">
+	<meta property="og:description" content="I am an engineer and I love to build cool stuff.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://robotjosh.com/">
+	<meta property="og:image" content="https://robotjosh.com/circuit.jpeg">
+	<style>
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -14,18 +24,22 @@ html {
   box-sizing: inherit;
 }
 
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 0 16px 16px;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
 }
 
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .about-section {
   padding: 50px;
@@ -38,94 +52,61 @@ html {
   padding: 0 16px;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .title {
   color: grey;
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+a {
+  color: #474e5d;
 }
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-</style>
-	<header>
-		<title>robotjosh website</title>
-	</header>	
-	<body>
-		<div class="about-section">
-			<h1>Robot Josh</h1>
-			<p>I am an engineer and I love to build cool stuff.</p>
-		</div>
+	</style>
+</head>
+<body>
+	<header class="about-section">
+		<h1>Robot Josh</h1>
+		<p>I am an engineer and I love to build cool stuff.</p>
+	</header>
+	<main>
 		<h2 style="text-align:center">Skills</h2>
 		<div class="row">
-			<div class="column">
-				<div class="card">
-					<img src="/hazgret.jpeg" alt="animals" style="width:100%">
-					<div class="container">
-						<h2>Firmware Development</h2>
-						<p class="title">Microcontrollers</p>
-						<p>Firmware is often the most critical piece of a design. It take expertise in coding standards, microcontrollers, low level communication protocols, and radio frequency protocols to implement reliable firmware. With many years experience using Nordic, ESP32, NXP, and other microcontrollers I can complete firmware projects and provide the most reliable code.</p>
-						<p>info@robotjosh.com</p>
-					</div>
+			<div class="card">
+				<img src="/hazgret.jpeg" alt="A black kitten and puppy lounging on a chair" width="1200" height="675" loading="lazy">
+				<div class="container">
+					<h2>Firmware Development</h2>
+					<p class="title">Microcontrollers</p>
+					<p>Firmware is often the most critical piece of a design. It takes expertise in coding standards, microcontrollers, low level communication protocols, and radio frequency protocols to implement reliable firmware. With many years experience using Nordic, ESP32, NXP, and other microcontrollers I can complete firmware projects and provide the most reliable code.</p>
+					<p><a href="mailto:info@robotjosh.com">info@robotjosh.com</a></p>
 				</div>
 			</div>
 
-			<div class="column">
-				<div class="card">
-					<img src="/circuit.png" alt="circuit" style="width:100%">
-					<div class="container">
-						<h2>Hardware Development</h2>
-						<p class="title"></p>
-						<p>Good hardware designs pave the way for smooth firmware development, reliable product operation, and optimized bill of materials.  It takes someone with many years hardware and firmware experience to create the best hardware designs.  Completing both the hardware and firmware pieces of a project can save time and money.  Experienced with Altium and Kicad.</p>
-						<p>info@robotjosh.com</p>
-					</div>
+			<div class="card">
+				<img src="/circuit.jpeg" alt="Close-up of a printed circuit board layout" width="1171" height="846" loading="lazy">
+				<div class="container">
+					<h2>Hardware Development</h2>
+					<p class="title">PCB Design</p>
+					<p>Good hardware designs pave the way for smooth firmware development, reliable product operation, and optimized bill of materials. It takes someone with many years hardware and firmware experience to create the best hardware designs. Completing both the hardware and firmware pieces of a project can save time and money. Experienced with Altium and Kicad.</p>
+					<p><a href="mailto:info@robotjosh.com">info@robotjosh.com</a></p>
 				</div>
 			</div>
 
-			<div class="column">
-				<div class="card">
-					<div class="container">
-						<h2>Internet Of Things</h2>
-						<p class="title">Bluetooth and WiFi</p>
-						<p>Long before it was called "Internet of Things," we were connecting hardware together.  Battery powered smart devices requires a lot of care to get right, from system architecture down to the hardware design. The best systems require a careful, multidisciplined approach.</p>
-						<p>info@robotjosh.com</p>
-					</div>
+			<div class="card">
+				<div class="container">
+					<h2>Internet Of Things</h2>
+					<p class="title">Bluetooth and WiFi</p>
+					<p>Long before it was called "Internet of Things," we were connecting hardware together. Battery powered smart devices require a lot of care to get right, from system architecture down to the hardware design. The best systems require a careful, multidisciplined approach.</p>
+					<p><a href="mailto:info@robotjosh.com">info@robotjosh.com</a></p>
 				</div>
 			</div>
 
-			<div class="column">
-				<div class="card">
-					<div class="container">
-						<h2>Web Development</h2>
-						<p>Experience in wordpress, static sites, domain management, dashboards, databases, map interfaces, and other hardware to web tasks.</p>
-						<p>info@robotjosh.com</p>
-					</div>
+			<div class="card">
+				<div class="container">
+					<h2>Web Development</h2>
+					<p class="title">Sites and Dashboards</p>
+					<p>Experience in wordpress, static sites, domain management, dashboards, databases, map interfaces, and other hardware to web tasks.</p>
+					<p><a href="mailto:info@robotjosh.com">info@robotjosh.com</a></p>
 				</div>
 			</div>
-
 		</div>
-	</body>
+	</main>
+</body>
 </html>
